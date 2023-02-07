@@ -221,11 +221,48 @@
     </ul>
     </div>
 </section>
+
+
+
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="button-close" data-modal-close>X</button>
+        <form class="form js-speaker-form" autocomplete="off">
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+            <div class="form-field">
+            <label  for="name" class="form-label">Имя</label>
+            <input class="form-input" type="text" name="user-name" id="name" autofocus />
+            </div>
+
+            <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel">
+            </div>
+            <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" autocomplete="on">
+            </div>
+
+            <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" cols="44" rows="12" placeholder="Введите текст"></textarea>
+            </div>
+            
+            <div class="">
+            <input type="checkbox" name="policy" id="policy">
+            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            </div>
+
+            <div class="">
+            <button type="submit">Отправить</button>
+            </div>
+        </form>
     </div>
 </div>
+
+
+
 
 </main>
 <footer class="footer">
@@ -252,5 +289,20 @@
     </div>
     </footer>
     <script src="./modal.js"></script>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script>
 </body>
 </html>
