@@ -722,6 +722,7 @@ color: #FFFFFF;
     left: 50%;
     transform: scale(1) translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
    }
 
 
@@ -755,6 +756,8 @@ color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
+    justify-content: center;
+    align-items: center;
    }
 
    .form-field{
@@ -846,6 +849,7 @@ color: #FFFFFF;
    }
 
    .FooterForm-button{
+    position: relative;
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -853,23 +857,25 @@ color: #FFFFFF;
     border-radius: 4px;
     margin-left: 12px;
 
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 188%;
 
-text-align: center;
-letter-spacing: 0.06em;
-
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 188%;
+    letter-spacing: 0.06em;
+    padding-right: 33px;
+    color: #FFFFFF;
    }
 
-   .iccon{
+   .FooterForm-button::after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 28px;
+    content: ' ';
+    display: block;
     width: 24px;
     height: 24px;
-    fill: #FFFFFF;
-    color: #FFFFFF;
+    background-image: url(../images/iconsend.svg);
    }
 
 .FooterForm-text{
@@ -893,4 +899,41 @@ color: #FFFFFF;
 
 .FoterForm-box{
     position: relative;
+}
+
+.policy{
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-link{
+    color: var(--acent-color);
+
+}
+
+.form-buton{   
+    display: block;
+    margin-top: 40px; 
+    margin-left: auto;
+    margin-right: auto;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 188%;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
 }
