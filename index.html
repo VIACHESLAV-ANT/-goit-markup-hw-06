@@ -226,33 +226,45 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="button-close" data-modal-close>X</button>
+        <button class="button-close" data-modal-close></button>
         <form class="form js-speaker-form" autocomplete="off">
             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
             <div class="form-field">
             <label  for="name" class="form-label">Имя</label>
             <input class="form-input" type="text" name="user-name" id="name" autofocus />
+            <span>
+                <svg class="form-icon"><use href="./images/symbol-defs.svg#person-form"></use></svg>
+                </span>
             </div>
 
             <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel">
+            <input  class="form-input" type="tel" name="tel" id="tel">
+            <span>
+                <svg class="form-icon"><use href="./images/symbol-defs.svg#phone-form"></use></svg>
+                </span>
             </div>
             <div class="form-field">
             <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail" autocomplete="on">
+            <input  class="form-input" type="email" name="mail" id="mail" autocomplete="on">
+            <span>
+            <svg class="form-icon"><use href="./images/symbol-defs.svg#email-form"></use></svg>
+            </span>
             </div>
 
             <div class="form-field">
             <label for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" cols="44" rows="12" placeholder="Введите текст"></textarea>
+            <textarea  class="form-input" name="comment" id="comment" cols="44" rows="12" placeholder="Введите текст"></textarea>
             </div>
             
-            <div class="policy">
-            <input type="checkbox" name="policy" id="policy">
-            <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="text-link">Условия договора</a></label>
-            </div>
+            <!-- <div class="policy"> -->
+            <label class="policy">
+                <input type="checkbox" name="policy" class="checkbox">
+                <span class="icon"></span>
+                Соглашаюсь с рассылкой и принимаю<a href="" class="text-link">Условия договора</a>
+            </label>
+            <!-- </div> -->
 
             <div class="">
             <button type="submit" class="form-buton">Отправить</button>
@@ -289,8 +301,8 @@
         <div class="FooterForm">
             <h2 class="FooterForm-title">Подпишитесь на рассылку</h2>
             <form class="FoterForm-box">
-                <input type="text" id="mail" class="FoterForm-input">
-                <label for="mail" class="FooterForm-text">E-mail</label>
+                <input type="text" id="mail" placeholder="E-mail" class="FoterForm-input">
+                <!-- <label for="mail" class="FooterForm-text">E-mail</label> -->
                 <button type="submit" class="FooterForm-button">Подписаться</button>
             </form>
         </div>
