@@ -233,27 +233,22 @@
             <div class="form-field">
             <label  for="name" class="form-label">Имя</label>
             <input class="form-input" type="text" name="user-name" id="name" autofocus />
-            <span>
-                <svg class="form-icon"><use href="./images/symbol-defs.svg#person-form"></use></svg>
-                </span>
+            <svg class="form-icon"><use href="./images/symbol-defs.svg#person-form"></use></svg>
             </div>
 
             <div class="form-field">
             <label for="tel">Телефон</label>
             <input  class="form-input" type="tel" name="tel" id="tel">
-            <span>
-                <svg class="form-icon"><use href="./images/symbol-defs.svg#phone-form"></use></svg>
-                </span>
-            </div>
-            <div class="form-field">
-            <label for="mail">Почта</label>
-            <input  class="form-input" type="email" name="mail" id="mail" autocomplete="on">
-            <span>
-            <svg class="form-icon"><use href="./images/symbol-defs.svg#email-form"></use></svg>
-            </span>
+            <svg class="form-icon"><use href="./images/symbol-defs.svg#phone-form"></use></svg>
             </div>
 
             <div class="form-field">
+            <label for="mail">Почта</label>
+            <input  class="form-input" type="email" name="mail" id="mail" autocomplete="on">
+            <svg class="form-icon"><use href="./images/symbol-defs.svg#email-form"></use></svg>
+            </div>
+
+            <div class="form-field lastfild">
             <label for="comment">Комментарий</label>
             <textarea  class="form-input" name="comment" id="comment" cols="44" rows="12" placeholder="Введите текст"></textarea>
             </div>
@@ -266,9 +261,7 @@
             </label>
             <!-- </div> -->
 
-            <div class="">
             <button type="submit" class="form-buton">Отправить</button>
-            </div>
         </form>
     </div>
 </div>
@@ -279,7 +272,7 @@
 </main>
 <footer class="footer">
     <div class="container adresa-link">
-        <div>
+        <div class="footer-adress">
         <a href="./" class="logo">Web<span class="logo-white">Studio</span></a>
         <address>
         <ul class="contakts list">
@@ -289,7 +282,7 @@
         </ul>
     </address>
     </div>
-        <div class="link"> 
+        <div class="footer-link link"> 
         <p class="link-title">присоединяйтесь</p>
         <ul class="link-list list">
             <li class="link-list-item"><a href="" class="link-list-ref"><svg class="link-list-icon"><use href="./images/symbol-defs.svg#instagram"></use></svg></a></li>
@@ -298,12 +291,12 @@
             <li class="link-list-item"><a href="" class="link-list-ref"><svg class="link-list-icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg></a></li>
         </ul>
         </div>
-        <div class="FooterForm">
-            <h2 class="FooterForm-title">Подпишитесь на рассылку</h2>
-            <form class="FoterForm-box">
+        <div class="footerform">
+            <h2 class="footerform-title">Подпишитесь на рассылку</h2>
+            <form class="foterform-box">
                 <input type="text" id="mail" placeholder="E-mail" class="FoterForm-input">
                 <!-- <label for="mail" class="FooterForm-text">E-mail</label> -->
-                <button type="submit" class="FooterForm-button">Подписаться</button>
+                <button type="submit" class="footerform-button">Подписаться</button>
             </form>
         </div>
     </div>

@@ -179,7 +179,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--bgc-footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
 }
 
 .logo-white{
@@ -624,7 +623,6 @@ margin-top: 10px;
 
    .adresa-link{
     align-items: baseline;
-    justify-content: space-between;
     display: flex;
    }
 
@@ -811,7 +809,6 @@ color: #FFFFFF;
     padding: 12px 16px;
     width: 100%;
     height: 120px;
-    margin-bottom: 10px;
    }
 
    .form-title{
@@ -828,7 +825,7 @@ color: var(--primary-text-color)
 
    }
 
-   .FooterForm{
+   .footerform{
     
    }
 
@@ -856,9 +853,10 @@ color: #FFFFFF;
     border-radius: 4px;
     background-color: rgba(33, 150, 243, 0);
     padding-left: 16px;
+    cursor: pointer;
    }
 
-   .FoterForm-input::placeholder{
+   .foterform-input::placeholder{
     color: rgba(255, 255, 255, 0.6);
 
     font-family: 'Roboto';
@@ -869,7 +867,7 @@ color: #FFFFFF;
     letter-spacing: 0.03em;
    }
 
-   .FooterForm-button{
+   .footerform-button{
     position: relative;
     width: 200px;
     height: 50px;
@@ -877,6 +875,8 @@ color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-left: 12px;
+    border: none;
+    cursor: pointer;
 
 
     font-weight: 700;
@@ -887,7 +887,7 @@ color: #FFFFFF;
     color: #FFFFFF;
    }
 
-   .FooterForm-button::after{
+   .footerform-button::after{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -897,6 +897,7 @@ color: #FFFFFF;
     width: 24px;
     height: 24px;
     background-image: url(../images/iconsend.svg);
+    cursor: pointer;
    }
 
 /* .FooterForm-text{
@@ -928,17 +929,19 @@ color: #FFFFFF;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    color: var(--second-text-color);
+    cursor: pointer;
 }
 
 .text-link{
     color: var(--acent-color);
-    margin-left: 2px;
+    margin-left: 4px;
 
 }
 
 .form-buton{   
     display: block;
-    margin-top: 40px; 
+    margin-top: 30px; 
     margin-left: auto;
     margin-right: auto;
     background: #188CE8;
@@ -947,6 +950,7 @@ color: #FFFFFF;
     width: 200px;
     height: 50px;
     cursor: pointer;
+    border: none;
 
 
     font-weight: 700;
@@ -969,6 +973,7 @@ color: #FFFFFF;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 42px;
+    height: 40px;
 }
 
 .form-icon{
@@ -1011,4 +1016,17 @@ color: #FFFFFF;
     background-origin:border-box;
     border-color: transparent;
     margin-right: 8px;
+}
+
+.lastfild{
+    margin-bottom: 0;
+}
+
+.footer-adress{
+    margin-right: 70px;
+    flex-grow: 1;
+}
+
+.footer-link{
+    margin-right: 93px;
 }
