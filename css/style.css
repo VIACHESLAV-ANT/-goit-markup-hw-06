@@ -829,7 +829,7 @@ color: var(--primary-text-color)
     
    }
 
-   .FooterForm-title{
+   .footerform-title{
     margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -844,7 +844,7 @@ color: #FFFFFF;
 
    }
 
-   .FoterForm-input{
+   .foterform-input{
     
     width: 358px;
     height: 50px;
@@ -918,7 +918,7 @@ color: #FFFFFF;
 
 } */
 
-.FoterForm-box{
+.foterform-box{
     position: relative;
 }
 
